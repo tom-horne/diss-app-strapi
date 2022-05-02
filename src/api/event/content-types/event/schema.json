@@ -12,14 +12,31 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "users": {
+    "description": {
+      "type": "text"
+    },
+    "when": {
+      "type": "datetime"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "event.location"
+    },
+    "going": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "attending"
+    },
+    "author": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "events"
+      "inversedBy": "createdEvents"
     }
   }
 }

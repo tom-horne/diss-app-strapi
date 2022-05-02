@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_event_locations",
+  "info": {
+    "displayName": "location",
+    "icon": "location-arrow"
+  },
+  "options": {},
+  "attributes": {
+    "longitude": {
+      "type": "float"
+    },
+    "latitude": {
+      "type": "float"
+    }
+  }
+}
