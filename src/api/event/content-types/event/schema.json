@@ -35,10 +35,19 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "createdEvents"
     },
-    "date": {
+    "start": {
       "type": "date"
     },
-    "time": {
+    "startTime": {
+      "type": "time"
+    },
+    "allDay": {
+      "type": "boolean"
+    },
+    "end": {
+      "type": "date"
+    },
+    "endTime": {
       "type": "time"
     }
   }
